@@ -1,7 +1,12 @@
 import './App.css';
+import Homepage from './components/Homepage/homepage';
 
 function App() {
-  return <h1>spiffy</h1>;
+  return (
+    <Homepage>
+      <div>ok</div>
+    </Homepage>
+  );
 }
 
 export default App;
