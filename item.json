@@ -1,8 +1,110 @@
-{
-  "id": "907c298a-3faa-4bff-85e3-abe480c0cefb",
-  "fabric": "cotton",
-  "season": "winter",
-  "colour": "blue",
-  "style": "classic",
-  "brand": "ZARA"
-}
+[
+  {
+    "id": "907c298a-3faa-4bff-85e3-abe480c0cefb",
+    "type": "jumper",
+    "fabric": "cotton",
+    "season": "winter",
+    "colour": ["black", "white"],
+    "style": ["classic"],
+    "brand": "H&M",
+    "images": [
+      {
+        "location": "https://www2.hm.com/en_gb/productpage.1013827025.html",
+        "data": {
+          "filename": "black-n-white",
+          "source": "assets folder"
+        }
+      }
+    ]
+  },
+  {
+    "id": "31d9c034-5dc0-45dd-a3b7-4bcfa7e07cde",
+    "type": "jumper",
+    "fabric": "cotton",
+    "season": "winter",
+    "colour": ["red"],
+    "style": ["casual"],
+    "brand": "H&M",
+    "images": [
+      {
+        "location": "https://www2.hm.com/en_gb/productpage.1013591008.html",
+        "data": {
+          "filename": "red H&M",
+          "source": "assets folder"
+        }
+      }
+    ]
+  },
+  {
+    "id": "760b816d-ca5b-43da-95fa-0935b6590b46",
+    "type": "top",
+    "fabric": "satin",
+    "season": "summer",
+    "colour": ["beige"],
+    "style": ["party"],
+    "brand": "H&M",
+    "images": [
+      {
+        "location": "https://www2.hm.com/en_gb/productpage.1125364004.html",
+        "data": {
+          "filename": "beige H&M",
+          "source": "assets folder"
+        }
+      }
+    ]
+  },
+  {
+    "id": "6a13a624-87b6-43ba-843a-a163ee14581f",
+    "type": "jeans",
+    "fabric": "denim",
+    "season": "summer", //all year round?
+    "colour": ["blue"],
+    "style": ["casual"],
+    "brand": "H&M",
+    "images": [
+      {
+        "location": "https://www2.hm.com/en_gb/productpage.1045459002.html",
+        "data": {
+          "filename": "blue H&M",
+          "source": "assets folder"
+        }
+      }
+    ]
+  },
+  {
+    "id": "06fb84db-9ab2-4982-b1ba-5b01cdc2247b",
+    "type": "jeans",
+    "fabric": "denim",
+    "season": "summer", //all year round?
+    "colour": ["light blue"],
+    "style": ["casual"],
+    "brand": "H&M",
+    "images": [
+      {
+        "location": "https://www2.hm.com/en_gb/productpage.1068429009.html",
+        "data": {
+          "filename": "light-blue",
+          "source": "assets folder"
+        }
+      }
+    ]
+  },
+  {
+    "id": "84223c4d-0a17-417b-92bb-bcb08934ccfe",
+    "type": "jeans",
+    "fabric": "denim",
+    "season": "summer", //all year round?
+    "colour": ["black"],
+    "style": ["casual"],
+    "brand": "H&M",
+    "images": [
+      {
+        "location": "https://www2.hm.com/en_gb/productpage.0573085028.html",
+        "data": {
+          "filename": "black-jeans",
+          "source": "assets folder"
+        }
+      }
+    ]
+  }
+]
