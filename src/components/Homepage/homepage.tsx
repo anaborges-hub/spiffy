@@ -1,11 +1,11 @@
-import { StyledHomepage } from './homepage.styles';
+import styles from './styles.module.css';
 
 type Props = {
   children: React.ReactNode;
 };
 
 function Homepage({ children }: Props) {
-  return <StyledHomepage>{children}</StyledHomepage>;
+  return <div className={styles.background}>{children}</div>;
 }
 
 export default Homepage;
