@@ -1,12 +1,17 @@
 import styles from './homepage.module.css';
 
-
-type Props = {
-  children: React.ReactNode;
-};
-
-function Homepage({ children }: Props) {
-  return <div className={styles.background}>{children}</div>;
+function Homepage() {
+  return (
+    <>
+      <div className="bg">this is a picture</div>
+      <img src="assets/closet.jpg" alt="closet" />
+      <div>
+        <button type="button" className={styles.button}>
+          Get started
+        </button>
+      </div>
+    </>
+  );
 }
 
 export default Homepage;
