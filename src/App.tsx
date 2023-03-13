@@ -1,11 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Homepage from './components/Homepage/Homepage';
+import Homepage from './components/Homepage/homepage';
+import { Nav } from './components/Nav/Nav';
+
+// https://reactrouter.com/en/main/router-components/browser-router
 
 function App() {
   return (
-    <Homepage>
-      <div>ok</div>
-    </Homepage>
+    <BrowserRouter>
+      <Nav />
+      <Homepage />
+    </BrowserRouter>
   );
 }
 
