@@ -1,4 +1,5 @@
-import styles from './styles.module.css';
+import styles from './homepage.module.css';
+
 
 type Props = {
   children: React.ReactNode;
