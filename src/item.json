@@ -17,7 +17,7 @@
     "colour": ["red"],
     "style": ["casual"],
     "brand": "H&M",
-    "images": "assets/red/jpeg"
+    "images": "assets/red.jpeg"
   },
   {
     "id": "760b816d-ca5b-43da-95fa-0935b6590b46",
@@ -47,7 +47,7 @@
     "colour": ["light blue"],
     "style": ["casual"],
     "brand": "H&M",
-    "images": "assets/jeans/jpeg"
+    "images": "assets/jeans.jpeg"
   },
   {
     "id": "84223c4d-0a17-417b-92bb-bcb08934ccfe",
