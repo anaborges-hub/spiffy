@@ -2,39 +2,74 @@
 
 * {
   box-sizing: border-box;
+  position: absolute;
+  /* background: linear-gradient(45deg, red, blue); */
+}
+.bg {
+  background-image: linear-gradient(
+      45deg,
+      rgba(39, 7, 7, 0.192),
+      rgba(100, 100, 100, 0.5)
+    ),
+    url(./closet.png);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
 
 button {
+  margin: 0;
   position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
 }
 
-.bg {
-  /* background-image: url('assets/closet.jpg'); */
-  background-image: 'assets/closet.jpg';
+.stbutton {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
 
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.bg img {
-  /* background-image: 'assets/closet.jpg'; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
+.stbutton:hover,
+.stbutton:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.stbutton:active {
+  background: var(--color);
+  color: #fff;
 }
