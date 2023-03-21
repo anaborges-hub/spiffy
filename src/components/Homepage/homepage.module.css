@@ -1,8 +1,8 @@
 /* https://blog.hubspot.com/marketing/web-design-trends-2017 */
 
 * {
-  box-sizing: border-box;
-  position: absolute;
+  /* box-sizing: border-box;
+  position: absolute; */
   /* background: linear-gradient(45deg, red, blue); */
 }
 .bg {

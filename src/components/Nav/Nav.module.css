@@ -1,13 +1,65 @@
-ul {
+.nav {
+  position: absolute;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.5s;
+  z-index: 10;
+}
+
+.nav.open {
+  transform: translate3d(0, 0, 0);
+}
+
+.brand {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
+  padding: 100px;
 }
 
-li {
-  list-style-type: none;
-}
-
-/* fix */
-Link:visited {
+.item {
   text-decoration: none;
+  color: aqua;
+  font-weight: 200;
+  font-size: 22px;
+  padding: 40px;
+  text-align: center;
+}
+
+a.link {
+  color: red;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 11;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform 0.5s;
+  opacity: 0.25s;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
 }
