@@ -1,51 +1,45 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
-import { useLocation } from 'react-router-dom';
 
 type NavProps = {
   open: boolean;
+  close: boolean;
 };
 
-const Nav = ({ open }: NavProps) => {
+const Nav = ({ open, close }: NavProps) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const location = useLocation();
-  useEffect(() => {
-    setSidebarOpen(false);
-  }, [location]);
+
+  console.log(isSidebarOpen);
 
   return (
     <>
-      <aside className={styles.nav + '' + (isSidebarOpen ? 'open' : 'close')}>
-        <nav>
-          <ul className={styles.brand}>
-            <li className={styles.item}>
-              <Link to="/homepage" className={styles.link}>
-                Homepage
-              </Link>
-            </li>
-          </ul>
-          <ul className={styles.brand}>
-            <li className={styles.item}>
-              <Link to="/categories">Categories</Link>
-            </li>
-          </ul>
-          <ul className={styles.brand}>
-            <li className={styles.item}>
-              <Link to="/random">Random Outfit</Link>
-            </li>
-          </ul>
-          <ul className={styles.brand}>
-            <li className={styles.item}>
-              <Link to="/library">Closet</Link>
-            </li>
-          </ul>
-        </nav>
+      <nav className={styles.nav + ' ' + (isSidebarOpen ? open : close)}>
+        <ul className={styles.brand}>
+          <li className={styles.item}>
+            <Link to="/homepage">Homepage</Link>
+          </li>
+        </ul>
+        <ul className={styles.brand}>
+          <li className={styles.item}>
+            <Link to="/categories">Categories</Link>
+          </li>
+        </ul>
+        <ul className={styles.brand}>
+          <li className={styles.item}>
+            <Link to="/random">Random Outfit</Link>
+          </li>
+        </ul>
+        <ul className={styles.brand}>
+          <li className={styles.item}>
+            <Link to="/library">Closet</Link>
+          </li>
+        </ul>
         <button
           type="button"
           className={
-            styles.hamburger + '' + (isSidebarOpen ? 'active' : 'close')
+            styles.hamburger + ' ' + (isSidebarOpen ? 'active' : 'close')
           }
           onClick={() => setSidebarOpen(!isSidebarOpen)}
         >
@@ -53,10 +47,9 @@ const Nav = ({ open }: NavProps) => {
           <span className={styles.line}></span>
           <span className={styles.line}></span>
         </button>
-      </aside>
+      </nav>
     </>
   );
 };
 
 export default Nav;
-// export function Nav() {

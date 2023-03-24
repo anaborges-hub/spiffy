@@ -8,7 +8,7 @@ import Nav from './components/Nav/Nav';
 function App() {
   return (
     <BrowserRouter>
-      <Nav open={false} />
+      <Nav open={false} close={true} />
       <Homepage />
     </BrowserRouter>
   );

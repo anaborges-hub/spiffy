@@ -1,35 +1,19 @@
 .nav {
-  position: absolute;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 0.5s;
-  z-index: 10;
+  display: flex;
 }
 
-.nav.open {
+.open {
   transform: translate3d(0, 0, 0);
 }
 
 .brand {
   list-style: none;
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  padding: 100px;
 }
 
 .item {
   text-decoration: none;
-  color: aqua;
-  font-weight: 200;
-  font-size: 22px;
-  padding: 40px;
-  text-align: center;
-}
-
-a.link {
-  color: red;
+  padding: 10px;
 }
 
 .hamburger {
@@ -43,7 +27,7 @@ a.link {
   z-index: 11;
 }
 
-.hamburger .line {
+.line {
   display: block;
   width: 40px;
   height: 3px;
