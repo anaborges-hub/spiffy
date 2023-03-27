@@ -3,22 +3,23 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
 
-type NavProps = {
-  open: boolean;
-  close: boolean;
-};
-
-const Nav = ({ open, close }: NavProps) => {
+const Nav = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   console.log(isSidebarOpen);
 
   return (
     <>
-      <nav className={styles.nav + ' ' + (isSidebarOpen ? open : close)}>
+      <nav className={styles.nav}>
         <ul className={styles.brand}>
           <li className={styles.item}>
-            <Link to="/homepage">Homepage</Link>
+            <Link
+              to={{
+                pathname: '/homepage',
+              }}
+            >
+              Homepage
+            </Link>
           </li>
         </ul>
         <ul className={styles.brand}>
@@ -33,7 +34,7 @@ const Nav = ({ open, close }: NavProps) => {
         </ul>
         <ul className={styles.brand}>
           <li className={styles.item}>
-            <Link to="/library">Closet</Link>
+            <Link to="/closet">Closet</Link>
           </li>
         </ul>
         <button
@@ -53,3 +54,5 @@ const Nav = ({ open, close }: NavProps) => {
 };
 
 export default Nav;
+
+// library?view=gallery&sort=alphabetical

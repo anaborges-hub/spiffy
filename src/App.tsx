@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Closet from './components/Closet/Closet';
 import Homepage from './components/Homepage/homepage';
 import Nav from './components/Nav/Nav';
@@ -9,9 +9,12 @@ import Nav from './components/Nav/Nav';
 function App() {
   return (
     <BrowserRouter>
-      <Nav open={false} close={true} />
-      <Homepage />
-      <Closet />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/closet" element={<Closet />} />
+      </Routes>
     </BrowserRouter>
   );
 }

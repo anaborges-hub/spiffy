@@ -4,10 +4,8 @@ import styles from './homepage.module.css';
 function Homepage() {
   return (
     <>
-      <section>
-        <div className={styles.bg}></div>
-        <div className={styles.container}></div>
-      </section>
+      <div className={styles.bg}></div>
+      <div className={styles.container}></div>
     </>
   );
 }
