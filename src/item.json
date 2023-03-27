@@ -7,7 +7,7 @@
     "colour": ["black", "white"],
     "style": ["classic"],
     "brand": "H&M",
-    "images": "assets/black-n-white.jpeg"
+    "imageSrc": "assets/black-n-white.jpg"
   },
   {
     "id": "31d9c034-5dc0-45dd-a3b7-4bcfa7e07cde",
@@ -17,7 +17,7 @@
     "colour": ["red"],
     "style": ["casual"],
     "brand": "H&M",
-    "images": "assets/red.jpeg"
+    "imageSrc": "assets/red.jpg"
   },
   {
     "id": "760b816d-ca5b-43da-95fa-0935b6590b46",
@@ -27,7 +27,7 @@
     "colour": ["beige"],
     "style": ["party"],
     "brand": "H&M",
-    "images": "assets/white-satin.jpeg"
+    "imageSrc": "assets/white-satin.jpg"
   },
   {
     "id": "6a13a624-87b6-43ba-843a-a163ee14581f",
@@ -37,7 +37,7 @@
     "colour": ["blue"],
     "style": ["casual"],
     "brand": "H&M",
-    "images": "assets/light-blue.png"
+    "imageSrc": "assets/light-blue.jpg"
   },
   {
     "id": "06fb84db-9ab2-4982-b1ba-5b01cdc2247b",
@@ -47,7 +47,7 @@
     "colour": ["light blue"],
     "style": ["casual"],
     "brand": "H&M",
-    "images": "assets/jeans.jpeg"
+    "imageSrc": "assets/jeans.jpg"
   },
   {
     "id": "84223c4d-0a17-417b-92bb-bcb08934ccfe",
@@ -57,6 +57,6 @@
     "colour": ["black"],
     "style": ["casual"],
     "brand": "H&M",
-    "images": "assets/black-jeans.jpeg"
+    "imageSrc": "assets/black-jeans.jpg"
   }
 ]
