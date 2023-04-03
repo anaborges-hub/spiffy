@@ -1,22 +1,22 @@
 import React from 'react';
 import { CarouselItemType } from '../../types';
-import styles from './Gallery.module.css';
 import Item from '../Item/Item';
+
+import styles from './Gallery.module.css';
 
 export type Props = {
   items: Array<CarouselItemType>;
 };
+
 function Gallery({ items }: Props) {
   return (
-    <>
-      <section className={styles.gallery}>
-        <div className={styles.columns}>
-          {items.map((item, idx) => (
-            <Item key={idx} {...item} />
-          ))}
-        </div>
-      </section>
-    </>
+    <div className={styles.carouselContainer}>
+      <ul className={styles.list}>
+        {items.map((item, idx) => (
+          <Item key={idx} {...item} />
+        ))}
+      </ul>
+    </div>
   );
 }
 

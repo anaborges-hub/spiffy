@@ -2,9 +2,9 @@
   display: flex;
 }
 
-.open {
+/* .open {
   transform: translate3d(0, 0, 0);
-}
+} */
 
 .brand {
   list-style: none;
@@ -26,7 +26,7 @@
   margin-left: 20px;
   z-index: 11;
 }
-
+/* 
 .line {
   display: block;
   width: 40px;
@@ -36,9 +36,9 @@
   border-radius: 4px;
   transition: transform 0.5s;
   opacity: 0.25s;
-}
+} */
 
-.hamburger.active .line:nth-child(1) {
+/* .hamburger.active .line:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
 }
 .hamburger.active .line:nth-child(2) {
@@ -46,4 +46,4 @@
 }
 .hamburger.active .line:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
-}
+} */
