@@ -1,6 +1,5 @@
 import React from 'react';
 import { CarouselItemType } from '../../types';
-import item from '../../item.json';
 
 import styles from './Item.module.css';
 
@@ -18,9 +17,13 @@ function Item({
   brand,
 }: Props) {
   return (
-    <li className={styles.item}>
-      <img src={imageSrc} alt={imageAlt} className={styles.carImg} />
-    </li>
+    <div className={styles.itemContainer}>
+      <div className={styles.itemSquare}>
+        <div className={styles.itemCard}>
+          <img src={imageSrc} alt={imageAlt} className={styles.item} />
+        </div>
+      </div>
+    </div>
   );
 }
 
