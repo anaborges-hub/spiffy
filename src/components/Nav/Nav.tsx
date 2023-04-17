@@ -6,7 +6,7 @@ import styles from './Nav.module.css';
 const Nav = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  console.log(isSidebarOpen);
+  console.log('nav', isSidebarOpen);
 
   return (
     <>
@@ -22,19 +22,29 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        <ul className={styles.brand}>
+        {/* <ul className={styles.brand}>
           <li className={styles.item}>
             <Link to="/categories">Categories</Link>
           </li>
-        </ul>
-        <ul className={styles.brand}>
+        </ul> */}
+        {/* <ul className={styles.brand}>
           <li className={styles.item}>
             <Link to="/random">Random Outfit</Link>
+          </li>
+        </ul> */}
+        <ul className={styles.brand}>
+          <li className={styles.item}>
+            <Link to="/closet">Closet</Link>
           </li>
         </ul>
         <ul className={styles.brand}>
           <li className={styles.item}>
-            <Link to="/closet">Closet</Link>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+        </ul>
+        <ul className={styles.brand}>
+          <li className={styles.item}>
+            <Link to="/carousel">Caroussel</Link>
           </li>
         </ul>
         <button
