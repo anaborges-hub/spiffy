@@ -9,10 +9,8 @@ export type Props = {
 };
 
 function Carousel({ items }: Props) {
-  console.log('broken');
   return (
     <div className={styles.carouselContainer}>
-      <div>hello</div>
       <ul className={styles.list}>
         {items.map((item, idx) => (
           <Item key={idx} {...item} />
