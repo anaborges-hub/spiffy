@@ -1,11 +1,12 @@
 /* https://blog.hubspot.com/marketing/web-design-trends-2017 */
 
-/* body {
+body {
   box-sizing: border-box;
-  /* height: 100vh;
-  width: 100vw; */
-/* position: absolute; 
-} */
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  margin: 0px;
+}
 .bg {
   background-image: linear-gradient(
       45deg,
@@ -16,18 +17,10 @@
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
+  background-attachment: fixed;
 }
-/* 
-.container {
-  width: 100vw;
-  height: 50vh; */
-/* display: flex;
-  align-items: center;
-  text-align: center;
-  position: relative;
-} */
 
 button {
   margin: 0;

@@ -1,13 +1,9 @@
+// ! library?view=gallery&sort=alphabetical
 import React from 'react';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
 
 const Nav = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-
-  console.log(isSidebarOpen);
-
   return (
     <>
       <nav className={styles.nav}>
@@ -37,22 +33,9 @@ const Nav = () => {
             <Link to="/closet">Closet</Link>
           </li>
         </ul>
-        <button
-          type="button"
-          className={
-            styles.hamburger + ' ' + (isSidebarOpen ? 'active' : 'close')
-          }
-          onClick={() => setSidebarOpen(!isSidebarOpen)}
-        >
-          <span className={styles.line}></span>
-          <span className={styles.line}></span>
-          <span className={styles.line}></span>
-        </button>
       </nav>
     </>
   );
 };
 
 export default Nav;
-
-// library?view=gallery&sort=alphabetical

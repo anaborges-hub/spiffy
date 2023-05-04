@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <>
       <div className={styles.bg}></div>
-      <div className={styles.container}></div>
+      {/* <div className={styles.container}></div> */}
     </>
   );
 }
