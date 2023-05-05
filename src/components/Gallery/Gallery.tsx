@@ -10,7 +10,7 @@ export type Props = {
 
 function Gallery({ items }: Props) {
   return (
-    <div className={styles.carouselContainer}>
+    <div className={styles.galleryContainer}>
       <ul className={styles.list}>
         {items.map((item, idx) => (
           <Item key={idx} {...item} />
