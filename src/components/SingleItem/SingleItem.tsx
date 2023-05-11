@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './SingleItem.module.css';
 import { ItemType } from '../../types';
 
 export type Props = ItemType;
@@ -15,14 +16,15 @@ function SingleItem({
   brand,
 }: Props) {
   return (
-    <div>
-      <figure>
+    <>
+      <div className={styles.square}>
         <img src={imageSrc} alt={imageAlt} />
-      </figure>
+      </div>
+
       <div>
         <p>{type}</p>
       </div>
-    </div>
+    </>
   );
 }
 

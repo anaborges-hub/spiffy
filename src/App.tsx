@@ -19,12 +19,13 @@ function App() {
           path="/closet/:id"
           element={
             <SingleItem
-              imageSrc={''}
-              id={''}
-              season={''}
+              imageSrc=""
+              imageAlt=""
+              id=""
+              season=""
               colour={[]}
               style={[]}
-              brand={''}
+              brand=""
             />
           }
         />
