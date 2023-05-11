@@ -1,11 +1,11 @@
 import React from 'react';
-import { CarouselItemType } from '../../types';
+import { ItemType } from '../../types';
 import Item from '../Item/Item';
 
 import styles from './Gallery.module.css';
 
 export type Props = {
-  items: Array<CarouselItemType>;
+  items: Array<ItemType>;
 };
 
 function Gallery({ items }: Props) {

@@ -4,11 +4,7 @@ import items from '../../item.json';
 import styles from './Closet.module.css';
 import Gallery from '../Gallery/Gallery';
 
-type Props = {
-  galleryView: boolean;
-};
-
-function Closet({ galleryView }: Props) {
+function Closet() {
   return (
     <div className={styles.container}>
       <Gallery items={items} />

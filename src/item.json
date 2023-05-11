@@ -1,6 +1,6 @@
 [
   {
-    "id": "907c298a-3faa-4bff-85e3-abe480c0cefb",
+    "id": "1",
     "type": "jumper",
     "fabric": "cotton",
     "season": "winter",
@@ -10,7 +10,7 @@
     "imageSrc": "assets/black-n-white.jpg"
   },
   {
-    "id": "31d9c034-5dc0-45dd-a3b7-4bcfa7e07cde",
+    "id": "2",
     "type": "jumper",
     "fabric": "cotton",
     "season": "winter",
@@ -20,7 +20,7 @@
     "imageSrc": "assets/red.jpg"
   },
   {
-    "id": "760b816d-ca5b-43da-95fa-0935b6590b46",
+    "id": "3",
     "type": "top",
     "fabric": "satin",
     "season": "summer",
@@ -30,7 +30,7 @@
     "imageSrc": "assets/white-satin.jpg"
   },
   {
-    "id": "6a13a624-87b6-43ba-843a-a163ee14581f",
+    "id": "4",
     "type": "jeans",
     "fabric": "denim",
     "season": "summer",
@@ -40,7 +40,7 @@
     "imageSrc": "assets/light-blue.jpg"
   },
   {
-    "id": "06fb84db-9ab2-4982-b1ba-5b01cdc2247b",
+    "id": "5",
     "type": "jeans",
     "fabric": "denim",
     "season": "summer",
@@ -50,7 +50,7 @@
     "imageSrc": "assets/jeans.jpg"
   },
   {
-    "id": "84223c4d-0a17-417b-92bb-bcb08934ccfe",
+    "id": "6",
     "type": "jeans",
     "fabric": "denim",
     "season": "summer",

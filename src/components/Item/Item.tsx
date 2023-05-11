@@ -1,9 +1,9 @@
 import React from 'react';
-import { CarouselItemType } from '../../types';
+import { ItemType } from '../../types';
 
 import styles from './Item.module.css';
 
-export type Props = CarouselItemType;
+export type Props = ItemType;
 
 function Item({
   imageSrc,
