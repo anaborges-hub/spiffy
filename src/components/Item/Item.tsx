@@ -7,7 +7,6 @@ export type Props = ItemType;
 
 function Item({
   imageSrc,
-  imageAlt,
   id,
   type,
   fabric,
@@ -17,10 +16,17 @@ function Item({
   brand,
 }: Props) {
   return (
-    <div className={styles.itemContainer}>
+    <div data-test={`item-${id}`} className={styles.itemContainer}>
       <div className={styles.itemSquare}>
         <div className={styles.itemCard}>
-          <img src={imageSrc} alt={imageAlt} className={styles.item} />
+          <a href={`/closet/${id}`}>
+            <img
+              data-test={`item-${imageSrc}`}
+              src={imageSrc}
+              alt="Product"
+              className={styles.item}
+            />
+          </a>
         </div>
       </div>
     </div>

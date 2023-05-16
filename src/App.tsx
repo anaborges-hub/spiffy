@@ -15,20 +15,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/closet" element={<Closet />} />
-        <Route
-          path="/closet/:id"
-          element={
-            <SingleItem
-              imageSrc=""
-              imageAlt=""
-              id=""
-              season=""
-              colour={[]}
-              style={[]}
-              brand=""
-            />
-          }
-        />
+        <Route path="/closet/:itemId" element={<SingleItem />} />
       </Routes>
     </BrowserRouter>
   );

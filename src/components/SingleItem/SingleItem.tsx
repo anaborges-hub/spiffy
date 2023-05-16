@@ -1,28 +1,24 @@
 import React from 'react';
 import styles from './SingleItem.module.css';
-import { ItemType } from '../../types';
+import items from '../../item.json';
+import { useParams } from 'react-router-dom';
 
-export type Props = ItemType;
+function SingleItem() {
+  const { itemId } = useParams();
+  const item = items.find((item) => item.id === itemId);
 
-function SingleItem({
-  imageSrc,
-  imageAlt,
-  id,
-  type,
-  fabric,
-  season,
-  colour,
-  style,
-  brand,
-}: Props) {
+  if (!item) {
+    return <div>ERROR 404</div>;
+  }
+
   return (
     <>
       <div className={styles.square}>
-        <img src={imageSrc} alt={imageAlt} />
+        <img src={item.imageSrc} alt="One item" />
       </div>
 
       <div>
-        <p>{type}</p>
+        <p>{item.type}</p>
       </div>
     </>
   );
