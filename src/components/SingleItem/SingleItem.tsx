@@ -13,12 +13,14 @@ function SingleItem() {
 
   return (
     <>
-      <div className={styles.square}>
-        <img src={item.imageSrc} alt="One item" />
-      </div>
-
+      <img src={item.imageSrc} alt={item.type} />
       <div>
         <p>{item.type}</p>
+        <p>{item.brand}</p>
+        <p>{item.colour}</p>
+        <p>{item.season}</p>
+        <p>{item.style}</p>
+        <p>{item.fabric}</p>
       </div>
     </>
   );

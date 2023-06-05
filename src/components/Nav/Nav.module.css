@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .brand {
